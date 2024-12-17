@@ -1,0 +1,55 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  width: fit-content;
+  position: absolute;
+  display: grid;
+  place-items: center;
+}
+.modal-content:hover{
+  cursor: move;
+}
+
+button {
+  background-color: #7b4b3a; /* Coffee brown */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 25px; /* Rounded corners */
+  padding: 10px 20px; /* Padding for size */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease, transform 0.2s; /* Smooth transition */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+button:hover {
+  background-color: #9e6b59; /* Lighter brown on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+button:active {
+  transform: translateY(0); /* Reset lift on click */
+}
+
+body{
+  background-color:#c4c6d7;
+  height: 100vh;
+  margin: 0;
+}
+.center {
+  display: grid;
+  place-items: center
+}
